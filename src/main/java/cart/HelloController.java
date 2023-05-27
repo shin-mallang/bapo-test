@@ -11,12 +11,12 @@ public class HelloController {
     private String first;
 
     @Value("${my-env.second}")
-    private String second;
+    private Integer second;
 
     @GetMapping("/hello")
     String ping() {
         return String.format(
-                "안녕! 설정된 정보는 FIRST = [$s], SECOND= [$s] !",
+                "안녕! 설정된 정보는 FIRST = [%s], SECOND= [%d] !",
                 first,
                 second);
     }
