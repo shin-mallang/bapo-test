@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Order 은(는)" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-26T13:28:32" hostname="shinDui-MacBookPro.local" time="0.001">
+  <properties/>
+  <testcase name="주문 상품이 최소 하나 이상 존재해야 한다" classname="cart.order.domain.OrderTest" time="0.0"/>
+  <testcase name="주문의 총액은 주문상품들의 가격의 합이다" classname="cart.order.domain.OrderTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

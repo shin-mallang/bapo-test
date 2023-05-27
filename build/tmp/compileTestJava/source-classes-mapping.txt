@@ -1,0 +1,36 @@
+cart/order/infrastructure/persistence/dao/OrderDaoTest.java
+ cart.order.infrastructure.persistence.dao.OrderDaoTest
+cart/integration/IntegrationTest.java
+ cart.integration.IntegrationTest
+cart/cartitem/infrastructure/persistence/repository/JdbcCartItemRepositoryTest.java
+ cart.cartitem.infrastructure.persistence.repository.JdbcCartItemRepositoryTest
+cart/product/infrastructure/persistence/repository/JdbcProductRepositoryTest.java
+ cart.product.infrastructure.persistence.repository.JdbcProductRepositoryTest
+cart/integration/ProductIntegrationTest.java
+ cart.integration.ProductIntegrationTest
+cart/JwpCartApplicationTests.java
+ cart.JwpCartApplicationTests
+cart/integration/CartItemIntegrationTest.java
+ cart.integration.CartItemIntegrationTest
+cart/product/infrastructure/persistence/dao/ProductDaoTest.java
+ cart.product.infrastructure.persistence.dao.ProductDaoTest
+cart/common/DaoTest.java
+ cart.common.DaoTest
+cart/cartitem/infrastructure/persistence/dao/CartItemDaoTest.java
+ cart.cartitem.infrastructure.persistence.dao.CartItemDaoTest
+cart/order/infrastructure/persistence/dao/OrderItemDaoTest.java
+ cart.order.infrastructure.persistence.dao.OrderItemDaoTest
+cart/order/domain/OrderItemTest.java
+ cart.order.domain.OrderItemTest
+cart/order/domain/OrderTest.java
+ cart.order.domain.OrderTest
+cart/order/infrastructure/persistence/repository/JdbcOrderRepositoryTest.java
+ cart.order.infrastructure.persistence.repository.JdbcOrderRepositoryTest
+cart/product/fixture/FakeProductRepository.java
+ cart.product.fixture.FakeProductRepository
+cart/order/domain/OrderValidatorTest.java
+ cart.order.domain.OrderValidatorTest
+cart/order/domain/service/OrderPlaceServiceTest.java
+ cart.order.domain.service.OrderPlaceServiceTest
+cart/order/application/OrderServiceTest.java
+ cart.order.application.OrderServiceTest
