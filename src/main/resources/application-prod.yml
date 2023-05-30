@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: 실제 DB 주소
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: DB 아이디
-    password: DB 비번
+    driver-class-name: ${RDS_DRIVER}
+    url: ${RDS_URL}
+    username: ${RDS_USERNAME}
+    password: ${RDS_PASSWORD}
