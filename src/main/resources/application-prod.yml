@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: 실제 DB 주소
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: DB 아이디
+    password: DB 비번
+
+my-env:
+  first: 실제 배포용 first
+  second: 실제 배포용 second
