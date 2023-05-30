@@ -1,7 +1,6 @@
 spring:
-  profiles:
-    active: dev
-
-my-env:
-  first: ${FIRST_MALLANG_ENV}
-  second: ${SECOND_MALLANG_ENV}
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
