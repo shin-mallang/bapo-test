@@ -1,7 +1,0 @@
-spring:
-  profiles:
-    active: dev
-
-my-env:  # 공통으로 적용된다.
-  first: ${FIRST_MALLANG_ENV}
-  second: ${SECOND_MALLANG_ENV}
