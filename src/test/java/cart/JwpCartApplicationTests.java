@@ -9,7 +9,7 @@ class JwpCartApplicationTests {
     @Test
     void contextLoads() {
         if (1 == 1) {
-            throw new IllegalArgumentException("1");
+            throw new IllegalArgumentException("21");
         }
     }
 
