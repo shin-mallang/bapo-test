@@ -4,8 +4,8 @@ on:
   pull_request:
     branches: [ "main" ]
 
-permissions:
-  contents: read
+# Report 결과 쓰기 위해 필요
+permissions: write-all
 
 jobs:
   test:
@@ -25,3 +25,9 @@ jobs:
  
     - name: 🐳 테스트 진행
       run: ./gradlew --info test
+      
+    - name: 🐳 테스트 결과 Report
+      uses: EnricoMi/publish-unit-test-result-action@v1
+      if: ${{ always() }}  # 테스트가 실패하여도 Report를 보기 위해 `always`로 설정
+      with:
+         files: build/test-results/**/*.xml
