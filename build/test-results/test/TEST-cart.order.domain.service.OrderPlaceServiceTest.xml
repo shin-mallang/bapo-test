@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OrderPlaceService 은(는)" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-26T13:28:32" hostname="shinDui-MacBookPro.local" time="0.003">
+<testsuite name="OrderPlaceService 은(는)" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-06-03T10:14:36" hostname="shinDui-MacBookPro.local" time="0.002">
   <properties/>
   <testcase name="상품이 변경되었으면 주문할 수 없다" classname="cart.order.domain.service.OrderPlaceServiceTest" time="0.001"/>
   <testcase name="장바구니 상품을 주문한다" classname="cart.order.domain.service.OrderPlaceServiceTest" time="0.001"/>

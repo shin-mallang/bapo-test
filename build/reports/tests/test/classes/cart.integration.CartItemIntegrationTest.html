@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.982s</div>
+<div class="counter">2.393s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,43 +81,43 @@
 <tr>
 <td class="success">장바구니에 아이템을 추가한다.</td>
 <td class="success">addCartItem()</td>
-<td class="success">0.259s</td>
+<td class="success">0.315s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">잘못된 사용자 정보로 장바구니에 아이템을 추가 요청시 실패한다.</td>
 <td class="success">addCartItemByIllegalMember()</td>
-<td class="success">0.296s</td>
+<td class="success">0.354s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">장바구니에 담긴 아이템의 수량을 0으로 변경하면, 장바구니에서 아이템이 삭제된다.</td>
 <td class="success">decreaseCartItemQuantityToZero()</td>
-<td class="success">0.269s</td>
+<td class="success">0.330s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">사용자가 담은 장바구니 아이템을 조회한다.</td>
 <td class="success">getCartItems()</td>
-<td class="success">0.287s</td>
+<td class="success">0.343s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">장바구니에 담긴 아이템의 수량을 변경한다.</td>
 <td class="success">increaseCartItemQuantity()</td>
-<td class="success">0.289s</td>
+<td class="success">0.366s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">장바구니에 담긴 아이템을 삭제한다.</td>
 <td class="success">removeCartItem()</td>
-<td class="success">0.303s</td>
+<td class="success">0.355s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">다른 사용자가 담은 장바구니 아이템의 수량을 변경하려 하면 실패한다.</td>
 <td class="success">updateOtherMembersCartItem()</td>
-<td class="success">0.279s</td>
+<td class="success">0.330s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -125,16 +125,16 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-05-26 22:28:35.177  INFO 16590 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [cart.integration.CartItemIntegrationTest], using SpringBootContextLoader
-2023-05-26 22:28:35.177  INFO 16590 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [cart.integration.CartItemIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-05-26 22:28:35.177  INFO 16590 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [cart.integration.CartItemIntegrationTest]: CartItemIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-05-26 22:28:35.178  INFO 16590 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration cart.JwpCartApplication for test class cart.integration.CartItemIntegrationTest
-2023-05-26 22:28:35.178  INFO 16590 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2023-05-26 22:28:35.178  INFO 16590 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2a63d4ef, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@280a50, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@51150653, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4bfa6a7f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7f8a1b43, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3f30e468, org.springframework.test.context.transaction.TransactionalTestExecutionListener@46ee4a43, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5e5f7973, org.springframework.test.context.event.EventPublishingTestExecutionListener@712021f8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@490b9810, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7d837f20, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@58b20502, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@28edd00d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3d331618, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5b2f04e1]
-2023-05-26 22:28:35.181  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-05-26 22:28:35.181  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-05-26 22:28:35.184  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2023-05-26 22:28:35.186  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+<pre>2023-06-03 19:14:39.343  INFO 202 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [cart.integration.CartItemIntegrationTest], using SpringBootContextLoader
+2023-06-03 19:14:39.343  INFO 202 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [cart.integration.CartItemIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-03 19:14:39.343  INFO 202 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [cart.integration.CartItemIntegrationTest]: CartItemIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-03 19:14:39.344  INFO 202 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration cart.JwpCartApplication for test class cart.integration.CartItemIntegrationTest
+2023-06-03 19:14:39.345  INFO 202 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-06-03 19:14:39.345  INFO 202 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6db21baf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ea68b79, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@381c0d1a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@194544e6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@64574b02, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e70f9b2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@665c47bb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@550d4de2, org.springframework.test.context.event.EventPublishingTestExecutionListener@bdc031a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3258d6ba, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@363d2ed5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@9e017ad, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@62cf1158, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@16d6f6bd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@49422934]
+2023-06-03 19:14:39.349  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-03 19:14:39.349  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-03 19:14:39.352  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-06-03 19:14:39.354  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -144,22 +144,22 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.9)
 
-2023-05-26 22:28:35.195  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 16590 (started by shin in /Users/shin/Desktop/woowacourse/lv2/jwp-shopping-order)
-2023-05-26 22:28:35.195  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-05-26 22:28:35.278  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-05-26 22:28:35.278  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-26 22:28:35.278  INFO 16590 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-05-26 22:28:35.285  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-26 22:28:35.285  INFO 16590 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 89 ms
-2023-05-26 22:28:35.304  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
-2023-05-26 22:28:35.305  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
-2023-05-26 22:28:35.418  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51924 (http) with context path ''
-2023-05-26 22:28:35.419  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.232 seconds (JVM running for 4.567)
-2023-05-26 22:28:35.426  INFO 16590 --- [o-auto-5-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-26 22:28:35.427  INFO 16590 --- [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-26 22:28:35.427  INFO 16590 --- [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-06-03 19:14:39.368  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 202 (started by shin in /Users/shin/Desktop/aws/bapo-test)
+2023-06-03 19:14:39.368  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-06-03 19:14:39.468  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-06-03 19:14:39.469  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-03 19:14:39.469  INFO 202 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-03 19:14:39.476  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-03 19:14:39.476  INFO 202 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 107 ms
+2023-06-03 19:14:39.505  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-06-03 19:14:39.507  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-06-03 19:14:39.641  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63695 (http) with context path ''
+2023-06-03 19:14:39.642  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.286 seconds (JVM running for 5.195)
+2023-06-03 19:14:39.651  INFO 202 --- [o-auto-5-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-03 19:14:39.651  INFO 202 --- [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-03 19:14:39.652  INFO 202 --- [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 Request method:	POST
-Request URI:	http://localhost:51924/cart-items
+Request URI:	http://localhost:63695/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -174,14 +174,14 @@ Body:
 {
     &quot;productId&quot;: 4
 }
-2023-05-26 22:28:35.463  WARN 16590 --- [o-auto-5-exec-3] c.c.e.ControllerExceptionHandler         : error = ExceptionResponse{code=300, message='인증정보가 잘못되었습니다.'}
+2023-06-03 19:14:39.693  WARN 202 --- [o-auto-5-exec-3] c.c.e.ControllerExceptionHandler         : error = ExceptionResponse{code=300, message='인증정보가 잘못되었습니다.'}
 HTTP/1.1 401 
 Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 26 May 2023 13:28:34 GMT
+Date: Sat, 03 Jun 2023 10:14:39 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
@@ -189,10 +189,10 @@ Connection: keep-alive
     &quot;code&quot;: 300,
     &quot;message&quot;: &quot;인증정보가 잘못되었습니다.&quot;
 }
-2023-05-26 22:28:35.478  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-05-26 22:28:35.478  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-05-26 22:28:35.480  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
-2023-05-26 22:28:35.480  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-06-03 19:14:39.703  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-03 19:14:39.704  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-03 19:14:39.706  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-06-03 19:14:39.706  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -202,22 +202,22 @@ Connection: keep-alive
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.9)
 
-2023-05-26 22:28:35.489  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 16590 (started by shin in /Users/shin/Desktop/woowacourse/lv2/jwp-shopping-order)
-2023-05-26 22:28:35.489  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-05-26 22:28:35.576  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-05-26 22:28:35.576  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-26 22:28:35.576  INFO 16590 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-05-26 22:28:35.583  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-26 22:28:35.583  INFO 16590 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 93 ms
-2023-05-26 22:28:35.602  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
-2023-05-26 22:28:35.603  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
-2023-05-26 22:28:35.714  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51929 (http) with context path ''
-2023-05-26 22:28:35.715  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.234 seconds (JVM running for 4.863)
-2023-05-26 22:28:35.722  INFO 16590 --- [o-auto-6-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-26 22:28:35.722  INFO 16590 --- [o-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-26 22:28:35.722  INFO 16590 --- [o-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-06-03 19:14:39.717  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 202 (started by shin in /Users/shin/Desktop/aws/bapo-test)
+2023-06-03 19:14:39.717  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-06-03 19:14:39.815  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-06-03 19:14:39.815  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-03 19:14:39.815  INFO 202 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-03 19:14:39.822  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-03 19:14:39.822  INFO 202 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 104 ms
+2023-06-03 19:14:39.853  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-06-03 19:14:39.854  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-06-03 19:14:39.984  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63700 (http) with context path ''
+2023-06-03 19:14:39.985  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.278 seconds (JVM running for 5.538)
+2023-06-03 19:14:39.993  INFO 202 --- [o-auto-6-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-03 19:14:39.993  INFO 202 --- [o-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-03 19:14:39.994  INFO 202 --- [o-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 Request method:	POST
-Request URI:	http://localhost:51929/cart-items
+Request URI:	http://localhost:63700/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -238,11 +238,11 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Location: /cart-items/4
 Content-Length: 0
-Date: Fri, 26 May 2023 13:28:35 GMT
+Date: Sat, 03 Jun 2023 10:14:39 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 Request method:	DELETE
-Request URI:	http://localhost:51929/cart-items/4
+Request URI:	http://localhost:63700/cart-items/4
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -258,11 +258,11 @@ HTTP/1.1 204
 Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
-Date: Fri, 26 May 2023 13:28:35 GMT
+Date: Sat, 03 Jun 2023 10:14:39 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 Request method:	GET
-Request URI:	http://localhost:51929/cart-items
+Request URI:	http://localhost:63700/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -280,7 +280,7 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 26 May 2023 13:28:35 GMT
+Date: Sat, 03 Jun 2023 10:14:39 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
@@ -306,10 +306,10 @@ Connection: keep-alive
         }
     }
 ]
-2023-05-26 22:28:35.781  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-05-26 22:28:35.781  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-05-26 22:28:35.783  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
-2023-05-26 22:28:35.783  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-06-03 19:14:40.059  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-03 19:14:40.060  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-03 19:14:40.062  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-06-03 19:14:40.063  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -319,22 +319,22 @@ Connection: keep-alive
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.9)
 
-2023-05-26 22:28:35.791  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 16590 (started by shin in /Users/shin/Desktop/woowacourse/lv2/jwp-shopping-order)
-2023-05-26 22:28:35.791  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-05-26 22:28:35.873  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-05-26 22:28:35.873  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-26 22:28:35.874  INFO 16590 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-05-26 22:28:35.880  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-26 22:28:35.880  INFO 16590 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 88 ms
-2023-05-26 22:28:35.899  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
-2023-05-26 22:28:35.900  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
-2023-05-26 22:28:36.008  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51936 (http) with context path ''
-2023-05-26 22:28:36.009  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.225 seconds (JVM running for 5.157)
-2023-05-26 22:28:36.016  INFO 16590 --- [o-auto-7-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-26 22:28:36.016  INFO 16590 --- [o-auto-7-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-26 22:28:36.016  INFO 16590 --- [o-auto-7-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-06-03 19:14:40.073  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 202 (started by shin in /Users/shin/Desktop/aws/bapo-test)
+2023-06-03 19:14:40.073  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-06-03 19:14:40.169  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-06-03 19:14:40.169  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-03 19:14:40.169  INFO 202 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-03 19:14:40.176  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-03 19:14:40.176  INFO 202 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 102 ms
+2023-06-03 19:14:40.208  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-06-03 19:14:40.209  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-06-03 19:14:40.337  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63710 (http) with context path ''
+2023-06-03 19:14:40.338  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.275 seconds (JVM running for 5.891)
+2023-06-03 19:14:40.346  INFO 202 --- [o-auto-7-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-03 19:14:40.346  INFO 202 --- [o-auto-7-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-03 19:14:40.346  INFO 202 --- [o-auto-7-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 Request method:	POST
-Request URI:	http://localhost:51936/cart-items
+Request URI:	http://localhost:63710/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -355,11 +355,11 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Location: /cart-items/4
 Content-Length: 0
-Date: Fri, 26 May 2023 13:28:35 GMT
+Date: Sat, 03 Jun 2023 10:14:39 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 Request method:	PATCH
-Request URI:	http://localhost:51936/cart-items/4
+Request URI:	http://localhost:63710/cart-items/4
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -374,14 +374,14 @@ Body:
 {
     &quot;quantity&quot;: 10
 }
-2023-05-26 22:28:36.054  WARN 16590 --- [o-auto-7-exec-4] c.c.e.ControllerExceptionHandler         : error = ExceptionResponse{code=101, message='상품을 수정할 권한이 없습니다.'}
+2023-06-03 19:14:40.383  WARN 202 --- [o-auto-7-exec-4] c.c.e.ControllerExceptionHandler         : error = ExceptionResponse{code=101, message='상품을 수정할 권한이 없습니다.'}
 HTTP/1.1 403 
 Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 26 May 2023 13:28:35 GMT
+Date: Sat, 03 Jun 2023 10:14:39 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
@@ -389,10 +389,10 @@ Connection: keep-alive
     &quot;code&quot;: 101,
     &quot;message&quot;: &quot;상품을 수정할 권한이 없습니다.&quot;
 }
-2023-05-26 22:28:36.060  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-05-26 22:28:36.060  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-05-26 22:28:36.062  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
-2023-05-26 22:28:36.063  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-06-03 19:14:40.390  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-03 19:14:40.390  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-03 19:14:40.392  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-06-03 19:14:40.392  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -402,22 +402,22 @@ Connection: keep-alive
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.9)
 
-2023-05-26 22:28:36.071  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 16590 (started by shin in /Users/shin/Desktop/woowacourse/lv2/jwp-shopping-order)
-2023-05-26 22:28:36.071  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-05-26 22:28:36.151  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-05-26 22:28:36.151  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-26 22:28:36.152  INFO 16590 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-05-26 22:28:36.157  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-26 22:28:36.157  INFO 16590 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 86 ms
-2023-05-26 22:28:36.175  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
-2023-05-26 22:28:36.176  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
-2023-05-26 22:28:36.290  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51942 (http) with context path ''
-2023-05-26 22:28:36.292  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.228 seconds (JVM running for 5.439)
-2023-05-26 22:28:36.298  INFO 16590 --- [o-auto-8-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-26 22:28:36.299  INFO 16590 --- [o-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-26 22:28:36.299  INFO 16590 --- [o-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-06-03 19:14:40.401  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 202 (started by shin in /Users/shin/Desktop/aws/bapo-test)
+2023-06-03 19:14:40.401  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-06-03 19:14:40.511  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-06-03 19:14:40.511  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-03 19:14:40.511  INFO 202 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-03 19:14:40.518  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-03 19:14:40.518  INFO 202 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2023-06-03 19:14:40.551  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-06-03 19:14:40.552  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-06-03 19:14:40.672  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63716 (http) with context path ''
+2023-06-03 19:14:40.673  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.28 seconds (JVM running for 6.226)
+2023-06-03 19:14:40.680  INFO 202 --- [o-auto-8-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-03 19:14:40.681  INFO 202 --- [o-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-03 19:14:40.681  INFO 202 --- [o-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 Request method:	POST
-Request URI:	http://localhost:51942/cart-items
+Request URI:	http://localhost:63716/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -438,13 +438,13 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Location: /cart-items/4
 Content-Length: 0
-Date: Fri, 26 May 2023 13:28:35 GMT
+Date: Sat, 03 Jun 2023 10:14:40 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
-2023-05-26 22:28:36.320  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-05-26 22:28:36.320  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-05-26 22:28:36.322  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
-2023-05-26 22:28:36.323  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2023-06-03 19:14:40.704  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-03 19:14:40.704  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-03 19:14:40.712  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2023-06-03 19:14:40.712  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -454,22 +454,22 @@ Connection: keep-alive
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.9)
 
-2023-05-26 22:28:36.330  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 16590 (started by shin in /Users/shin/Desktop/woowacourse/lv2/jwp-shopping-order)
-2023-05-26 22:28:36.330  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-05-26 22:28:36.405  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-05-26 22:28:36.405  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-26 22:28:36.405  INFO 16590 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-05-26 22:28:36.410  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-26 22:28:36.410  INFO 16590 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 79 ms
-2023-05-26 22:28:36.429  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
-2023-05-26 22:28:36.430  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
-2023-05-26 22:28:36.535  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51947 (http) with context path ''
-2023-05-26 22:28:36.536  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.212 seconds (JVM running for 5.684)
-2023-05-26 22:28:36.543  INFO 16590 --- [o-auto-9-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-26 22:28:36.544  INFO 16590 --- [o-auto-9-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-26 22:28:36.544  INFO 16590 --- [o-auto-9-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-06-03 19:14:40.724  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 202 (started by shin in /Users/shin/Desktop/aws/bapo-test)
+2023-06-03 19:14:40.724  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-06-03 19:14:40.822  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-06-03 19:14:40.822  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-03 19:14:40.822  INFO 202 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-03 19:14:40.829  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-03 19:14:40.829  INFO 202 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 105 ms
+2023-06-03 19:14:40.860  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2023-06-03 19:14:40.864  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2023-06-03 19:14:40.983  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63721 (http) with context path ''
+2023-06-03 19:14:40.984  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.271 seconds (JVM running for 6.537)
+2023-06-03 19:14:40.993  INFO 202 --- [o-auto-9-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-03 19:14:40.993  INFO 202 --- [o-auto-9-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-03 19:14:40.994  INFO 202 --- [o-auto-9-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 Request method:	POST
-Request URI:	http://localhost:51947/cart-items
+Request URI:	http://localhost:63721/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -490,11 +490,11 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Location: /cart-items/4
 Content-Length: 0
-Date: Fri, 26 May 2023 13:28:35 GMT
+Date: Sat, 03 Jun 2023 10:14:40 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 Request method:	PATCH
-Request URI:	http://localhost:51947/cart-items/4
+Request URI:	http://localhost:63721/cart-items/4
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -514,11 +514,11 @@ Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Length: 0
-Date: Fri, 26 May 2023 13:28:35 GMT
+Date: Sat, 03 Jun 2023 10:14:40 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 Request method:	GET
-Request URI:	http://localhost:51947/cart-items
+Request URI:	http://localhost:63721/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -536,7 +536,7 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 26 May 2023 13:28:35 GMT
+Date: Sat, 03 Jun 2023 10:14:40 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
@@ -572,10 +572,10 @@ Connection: keep-alive
         }
     }
 ]
-2023-05-26 22:28:36.609  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-05-26 22:28:36.609  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-05-26 22:28:36.611  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
-2023-05-26 22:28:36.612  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2023-06-03 19:14:41.071  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-03 19:14:41.071  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-03 19:14:41.073  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2023-06-03 19:14:41.074  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -585,22 +585,22 @@ Connection: keep-alive
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.9)
 
-2023-05-26 22:28:36.620  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 16590 (started by shin in /Users/shin/Desktop/woowacourse/lv2/jwp-shopping-order)
-2023-05-26 22:28:36.620  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-05-26 22:28:36.697  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-05-26 22:28:36.698  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-26 22:28:36.698  INFO 16590 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-05-26 22:28:36.704  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-26 22:28:36.704  INFO 16590 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 84 ms
-2023-05-26 22:28:36.722  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
-2023-05-26 22:28:36.723  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
-2023-05-26 22:28:36.831  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51954 (http) with context path ''
-2023-05-26 22:28:36.832  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.219 seconds (JVM running for 5.98)
-2023-05-26 22:28:36.838  INFO 16590 --- [-auto-10-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-26 22:28:36.838  INFO 16590 --- [-auto-10-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-26 22:28:36.839  INFO 16590 --- [-auto-10-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-03 19:14:41.083  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 202 (started by shin in /Users/shin/Desktop/aws/bapo-test)
+2023-06-03 19:14:41.083  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-06-03 19:14:41.187  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-06-03 19:14:41.188  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-03 19:14:41.188  INFO 202 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-03 19:14:41.195  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-03 19:14:41.195  INFO 202 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 111 ms
+2023-06-03 19:14:41.222  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2023-06-03 19:14:41.223  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2023-06-03 19:14:41.346  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63728 (http) with context path ''
+2023-06-03 19:14:41.348  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.273 seconds (JVM running for 6.9)
+2023-06-03 19:14:41.355  INFO 202 --- [-auto-10-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-03 19:14:41.355  INFO 202 --- [-auto-10-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-03 19:14:41.355  INFO 202 --- [-auto-10-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 Request method:	POST
-Request URI:	http://localhost:51954/cart-items
+Request URI:	http://localhost:63728/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -621,11 +621,11 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Location: /cart-items/4
 Content-Length: 0
-Date: Fri, 26 May 2023 13:28:36 GMT
+Date: Sat, 03 Jun 2023 10:14:40 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 Request method:	POST
-Request URI:	http://localhost:51954/cart-items
+Request URI:	http://localhost:63728/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -646,11 +646,11 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Location: /cart-items/5
 Content-Length: 0
-Date: Fri, 26 May 2023 13:28:36 GMT
+Date: Sat, 03 Jun 2023 10:14:40 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 Request method:	GET
-Request URI:	http://localhost:51954/cart-items
+Request URI:	http://localhost:63728/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -668,7 +668,7 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 26 May 2023 13:28:36 GMT
+Date: Sat, 03 Jun 2023 10:14:40 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
@@ -714,10 +714,10 @@ Connection: keep-alive
         }
     }
 ]
-2023-05-26 22:28:36.897  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-05-26 22:28:36.897  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-05-26 22:28:36.899  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
-2023-05-26 22:28:36.899  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2023-06-03 19:14:41.416  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-03 19:14:41.416  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-03 19:14:41.419  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2023-06-03 19:14:41.419  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -727,22 +727,22 @@ Connection: keep-alive
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.9)
 
-2023-05-26 22:28:36.907  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 16590 (started by shin in /Users/shin/Desktop/woowacourse/lv2/jwp-shopping-order)
-2023-05-26 22:28:36.907  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-05-26 22:28:36.987  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-05-26 22:28:36.988  INFO 16590 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-26 22:28:36.988  INFO 16590 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-05-26 22:28:36.994  INFO 16590 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-26 22:28:36.994  INFO 16590 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 87 ms
-2023-05-26 22:28:37.012  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
-2023-05-26 22:28:37.013  INFO 16590 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
-2023-05-26 22:28:37.117  INFO 16590 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51961 (http) with context path ''
-2023-05-26 22:28:37.120  INFO 16590 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.22 seconds (JVM running for 6.268)
-2023-05-26 22:28:37.126  INFO 16590 --- [-auto-11-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-26 22:28:37.127  INFO 16590 --- [-auto-11-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-26 22:28:37.127  INFO 16590 --- [-auto-11-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-06-03 19:14:41.428  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Starting CartItemIntegrationTest using Java 11.0.17 on shinDui-MacBookPro.local with PID 202 (started by shin in /Users/shin/Desktop/aws/bapo-test)
+2023-06-03 19:14:41.429  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-06-03 19:14:41.533  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-06-03 19:14:41.534  INFO 202 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-03 19:14:41.534  INFO 202 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-03 19:14:41.541  INFO 202 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-03 19:14:41.541  INFO 202 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 112 ms
+2023-06-03 19:14:41.567  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2023-06-03 19:14:41.568  INFO 202 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2023-06-03 19:14:41.690  INFO 202 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63735 (http) with context path ''
+2023-06-03 19:14:41.692  INFO 202 --- [    Test worker] c.integration.CartItemIntegrationTest    : Started CartItemIntegrationTest in 0.271 seconds (JVM running for 7.244)
+2023-06-03 19:14:41.699  INFO 202 --- [-auto-11-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-03 19:14:41.699  INFO 202 --- [-auto-11-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-03 19:14:41.700  INFO 202 --- [-auto-11-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 Request method:	POST
-Request URI:	http://localhost:51961/cart-items
+Request URI:	http://localhost:63735/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -763,11 +763,11 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Location: /cart-items/4
 Content-Length: 0
-Date: Fri, 26 May 2023 13:28:36 GMT
+Date: Sat, 03 Jun 2023 10:14:41 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 Request method:	PATCH
-Request URI:	http://localhost:51961/cart-items/4
+Request URI:	http://localhost:63735/cart-items/4
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -787,11 +787,11 @@ Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Length: 0
-Date: Fri, 26 May 2023 13:28:36 GMT
+Date: Sat, 03 Jun 2023 10:14:41 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 Request method:	GET
-Request URI:	http://localhost:51961/cart-items
+Request URI:	http://localhost:63735/cart-items
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -809,7 +809,7 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 26 May 2023 13:28:36 GMT
+Date: Sat, 03 Jun 2023 10:14:41 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
@@ -846,7 +846,7 @@ Connection: keep-alive
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8.1</a> at May 26, 2023, 10:28:37 PM</p>
+<a href="http://www.gradle.org">Gradle 6.8.1</a> at Jun 3, 2023, 7:14:42 PM</p>
 </div>
 </div>
 </body>

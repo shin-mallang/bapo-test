@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OrderService 은(는)" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-26T13:28:31" hostname="shinDui-MacBookPro.local" time="0.059">
+<testsuite name="OrderService 은(는)" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-06-03T10:14:35" hostname="shinDui-MacBookPro.local" time="0.063">
   <properties/>
-  <testcase name="상품 정보가 변경되었으면 주문할 수 없다" classname="cart.order.application.OrderServiceTest" time="0.052"/>
+  <testcase name="상품 정보가 변경되었으면 주문할 수 없다" classname="cart.order.application.OrderServiceTest" time="0.056"/>
   <testcase name="상품을 주문한다" classname="cart.order.application.OrderServiceTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
