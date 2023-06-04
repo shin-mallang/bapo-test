@@ -23,7 +23,7 @@ pipeline {
                sshagent(credentials: ['${env.EC2_CREDENTIAL_ID}']) {
                      sh '''
                        scp build/libs/*.jar ubuntu@${env.EC2_PRIVATE_IP}:/home/${env.EC2_USERNAME}
-                       ssh ubuntu@{env.EC2_PRIVATE_IP} "sh {env.BUILD_SCRIPT_NAME}.sh" &
+                       ssh ubuntu@${env.EC2_PRIVATE_IP} "sh ${env.BUILD_SCRIPT_NAME}.sh" &
                       '''
                }
            }
