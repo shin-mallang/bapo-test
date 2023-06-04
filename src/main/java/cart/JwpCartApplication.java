@@ -7,16 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JwpCartApplication {
 
     public static void main(String[] args) {
-        System.out.println("jenkins 설정!!!1");
-        System.out.println("jenkins 설정!!!2");
-        System.out.println("jenkins 설정!!!3");
-        System.out.println("jenkins 설정!!!3");
-        System.out.println("jenkins 설정!!!4");
-        System.out.println("jenkins 설정!!!4");
-        System.out.println("jenkins 설정!!!4");
-        System.out.println("jenkins 설정!!!4");
-        System.out.println("jenkins 설정!!!4");
-        System.out.println("jenkins 설정!!!4");
+        System.out.println("jenkins 설정!!!");
         SpringApplication.run(JwpCartApplication.class, args);
     }
 
