@@ -9,7 +9,7 @@ pipeline {
                 checkout scmGit(
                     branches: [[name: 'main']],
                     extensions: [submodule(parentCredentials: true, trackingSubmodules: true)],
-                    userRemoteConfigs: [[credentialsId: '${params.GIT_CREDENTIAL_ID}', url: 'https://github.com/shin-mallang/bapo-test']]
+                    userRemoteConfigs: [[credentialsId: "${params.GIT_CREDENTIAL_ID}", url: 'https://github.com/shin-mallang/bapo-test']]
                 )
             }
         }
