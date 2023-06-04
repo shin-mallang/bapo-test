@@ -22,8 +22,8 @@ pipeline {
            steps {
                sshagent(credentials: ["${params.EC2_CREDENTIAL_ID}"]) {
                      sh '''
-                       scp build/libs/*.jar ubuntu@${params.IP}:/home/ubuntu
-                       ssh ubuntu@172.31.25.210 "sh bapo.sh" &
+                       scp build/libs/*.jar ubuntu@$IP:/home/ubuntu
+                       ssh ubuntu@$IP "sh bapo.sh" &
                       '''
                }
            }
