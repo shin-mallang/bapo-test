@@ -20,10 +20,10 @@ pipeline {
         }
         stage('Deploy') {
            steps {
-               sshagent(credentials: ['mallang-spring-ec2-key']) {
+               sshagent(credentials: ["${params.EC2_CREDENTIAL_ID}"]) {
                      sh '''
-                       scp build/libs/*.jar ubuntu@${params.EC2_PRIVATE_IP}:/home/${params.EC2_USERNAME}
-                       ssh ubuntu@${params.EC2_PRIVATE_IP} "sh ${params.BUILD_SCRIPT_NAME}.sh" &
+                       scp build/libs/*.jar ubuntu@:/home/ubuntu
+                       ssh ubuntu@172.31.25.210 "sh bapo.sh" &
                       '''
                }
            }
