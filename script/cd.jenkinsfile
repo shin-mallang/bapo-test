@@ -9,7 +9,7 @@ pipeline {
                 checkout scmGit(
                     branches: [[name: 'main']],
                     extensions: [submodule(parentCredentials: true, trackingSubmodules: true)],
-                    userRemoteConfigs: [[credentialsId: '${env.GIT_CREDENTIAL_ID}', url: 'https://github.com/shin-mallang/bapo-test']]
+                    userRemoteConfigs: [[credentialsId: '${params.GIT_CREDENTIAL_ID}', url: 'https://github.com/shin-mallang/bapo-test']]
                 )
             }
         }
@@ -20,10 +20,10 @@ pipeline {
         }
         stage('Deploy') {
            steps {
-               sshagent(credentials: ['${env.EC2_CREDENTIAL_ID}']) {
+               sshagent(credentials: ['${params.EC2_CREDENTIAL_ID}']) {
                      sh '''
-                       scp build/libs/*.jar ubuntu@${env.EC2_PRIVATE_IP}:/home/${env.EC2_USERNAME}
-                       ssh ubuntu@${env.EC2_PRIVATE_IP} "sh ${env.BUILD_SCRIPT_NAME}.sh" &
+                       scp build/libs/*.jar ubuntu@${params.EC2_PRIVATE_IP}:/home/${params.EC2_USERNAME}
+                       ssh ubuntu@${params.EC2_PRIVATE_IP} "sh ${params.BUILD_SCRIPT_NAME}.sh" &
                       '''
                }
            }
