@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+    tools {
+        gradle 'gradle'
+    }
+    stages {
+        stage('Github') {
+            steps {
+                checkout scmGit(
+                    branches: [[name: 'main']],
+                    extensions: [submodule(parentCredentials: true, trackingSubmodules: true)],
+                    userRemoteConfigs: [[credentialsId: 'github_access_token', url: 'https://github.com/shin-mallang/bapo-test']]
+                )
+            }
+        }
+        stage('Build') {
+            steps {
+                sh "./gradlew clean bootJar"
+            }
+        }
+        stage('Deploy') {
+           steps {
+               sshagent(credentials: ['mallang-spring-ec2-key']) {
+                   sh '''
+                    scp build/libs/*.jar ubuntu@172.31.25.210:/home/ubuntu
+                    ssh ubuntu@172.31.25.210 "sh bapo.sh" &
+                   '''
+               }
+           }
+       }
+    }
+}
