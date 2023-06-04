@@ -9,7 +9,7 @@ pipeline {
                 checkout scmGit(
                     branches: [[name: 'main']],
                     extensions: [submodule(parentCredentials: true, trackingSubmodules: true)],
-                    userRemoteConfigs: [[credentialsId: 'github_access_token', url: 'https://github.com/shin-mallang/bapo-test']]
+                    userRemoteConfigs: [[credentialsId: '${env.GIT_CREDENTIAL_ID}', url: 'https://github.com/shin-mallang/bapo-test']]
                 )
             }
         }
@@ -20,11 +20,11 @@ pipeline {
         }
         stage('Deploy') {
            steps {
-               sshagent(credentials: ['mallang-spring-ec2-key']) {
-                   sh '''
-                    scp build/libs/*.jar ubuntu@172.31.25.210:/home/ubuntu
-                    ssh ubuntu@172.31.25.210 "sh bapo.sh" &
-                   '''
+               sshagent(credentials: ['${env.EC2_CREDENTIAL_ID}']) {
+                     sh '''
+                       scp build/libs/*.jar ubuntu@${env.EC2_PRIVATE_IP}:/home/${env.EC2_USERNAME}
+                       ssh ubuntu@{env.EC2_PRIVATE_IP} "sh {env.BUILD_SCRIPT_NAME}.sh" &
+                      '''
                }
            }
        }
