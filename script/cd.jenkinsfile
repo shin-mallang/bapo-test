@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Deploy') {
            steps {
-               sshagent(credentials: [$EC2_CREDENTIAL_ID]) {
+               sshagent(credentials: ["$EC2_CREDENTIAL_ID"]) {
                      sh '''
                        scp build/libs/*.jar ubuntu@$IP:/home/$EC2_USER
                        ssh ubuntu@$IP "sh $SCRIPT_NAME.sh" &
