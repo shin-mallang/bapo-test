@@ -11,7 +11,6 @@ public class JwpCartApplication {
         System.out.println("jenkins 설정!!!2");
         System.out.println("jenkins 설정!!!3");
         System.out.println("jenkins 설정!!!4");
-        System.out.println("jenkins 설정!!!5");
         SpringApplication.run(JwpCartApplication.class, args);
     }
 
